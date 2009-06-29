@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libFLAC8 libao2 libcurl4 libiconv2 libintl8 libogg0 libspeex1 libvorbis0 libvorbisenc2 libvorbisfile3
+requires: libFLAC8 libao2 libcurl4 libiconv2 libintl8 libogg0 libspeex1 libvorbis0 libvorbisenc2 libvorbisfile3
 sdesc: "Ogg Vorbis audio tools"
 ldesc: "A collection of tools for Ogg Vorbis audio files:
 
