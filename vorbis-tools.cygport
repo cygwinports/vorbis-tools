@@ -1,0 +1,26 @@
+NAME="vorbis-tools"
+VERSION=1.1.1
+RELEASE=6
+CATEGORY="Audio"
+SUMMARY="Ogg Vorbis audio tools"
+DESCRIPTION="A collection of tools for Ogg Vorbis audio files:
+
+ogg123:  an ogg vorbis command line audio player
+oggenc:  the ogg vorbis encoder
+oggdec:  a simple, portable command line decoder (to wav and raw)
+ogginfo: provides information (tags, bitrate, length, etc.) about
+         an ogg vorbis file
+vcut:    cuts an ogg vorbis file into two parts at a particular point
+vorbiscomment:  edits the comments in an ogg vorbis file
+"
+HOMEPAGE="http://www.vorbis.com/"
+SRC_URI="http://downloads.xiph.org/releases/vorbis/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	mirror://portage/media-sound/${NAME}/files/${NAME}-1.1.1-utf8.patch
+	mirror://portage/media-sound/${NAME}/files/${NAME}-1.1.1-curl-7.16.0.patch
+	${NAME}-1.1.1+flac-1.1.3-1.patch
+	${NAME}-1.1.1+flac-1.1.3-2.patch
+	${NAME}-1.1.1+flac-1.1.3-3.patch
+"
+
+CYGCONF_ARGS="--enable-vcut"
